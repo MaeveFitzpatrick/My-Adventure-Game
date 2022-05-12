@@ -5,7 +5,16 @@ public class MyAdvGame {
 	public static void main {String[] args) {
 		Scanner input = new Scanner(System.in);
 		TextBasedGame myGame = new TextBasedGame();
-		
+		myGame.intro();
+		String response = input.next();
+		if (response.equals("mailbox")) {
+		      System.out.println("You opened the mailbox, and found a key inside!\nUse it to open the door (type 'door').\n(or type 'restart' to go back to the beginning)");
+		      myGame.key("key");
+		    }
+		    else if (response.equals("door")) {
+		      System.out.println("Uh oh, the door is locked! Type 'quit' to try again.");
+		      myGame.quit("quitResponse");
+		    }
 	}
 }
 class TextBasedGame {
