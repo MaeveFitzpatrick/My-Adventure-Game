@@ -31,5 +31,14 @@ class TextBasedGame {
 	      System.out.println("Uh oh, the door is locked! Type 'restart' to try again.");
 	    }
 	  }
+	public void key(String keyResponse) {
+	    keyResponse = input.next();
+	    if (keyResponse.equals("door")) {
+	      System.out.println("You've unlocked the door! Congratulations!\nThanks for playing!"); 
+	    }
+	    else if (keyResponse.equals("restart")) {
+	      System.out.println("Thanks for playing!");
+	    }
+	      }
 	}
 }
