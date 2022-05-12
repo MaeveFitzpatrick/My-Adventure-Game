@@ -39,6 +39,11 @@ class TextBasedGame {
 	    else if (keyResponse.equals("restart")) {
 	      System.out.println("Thanks for playing!");
 	    }
-	      }
+	}
+	public void quit(String quitResponse) {
+	    quitResponse = input.next();
+	    if (quitResponse.equals("quit")) {
+	      System.out.println("Thanks for playing!");
+	    }
 	}
 }
